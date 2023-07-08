@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 60%;
+    margin: 3rem auto 2rem;
+    border: 2px solid;
+}
+
+.container .header {
+    display: flex;
+    background-color: #f1ad31;
+}
+
+.container .header .img-bar {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-bar .shape {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background-color: black;
+    width: 6.99rem;
+
+}
+
+.container .header .img-bar img {
+    height: 14rem;
+    float: right;
+    margin-top: 1rem;
+    border: 5px solid;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+
+.container .header .name-bar {
+    flex: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    margin: auto 1rem;
+
+}
+
+.name-bar .whiteclr {
+    font-size: 2.6rem;
+    color: white;
+}
+
+.main-bar {
+    display: flex;
+}
+
+.main-bar .left-side-bar {
+    flex-basis: 13.5rem;
+    background-color: black;
+    color: white;
+    font-family: system-ui;
+    padding: 2rem 1rem 0 2.5rem;
+}
+
+.main-bar .right-side-bar {
+    flex: 2;
+    padding-left: 1rem;
+}
+
+.orange-pnl {
+    background-color: orange;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    margin: 1.5rem 1rem 1rem 0;
+    text-align: center;
+    font-family: cursive;
+    width: 12rem;
+    color: white;
+}
+
+.text-wrapper,
+.text-wrapper-1 {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li::marker {
+    color: orange;
+    font-size: 1.2rem;
+}
+
+.material-symbols-outlined {
+    color: orange;
+}
+
+.text-wrapper-1 .material-symbols-outlined {
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content-wrapper .year-bar {
+    color: orange;
+    font-weight: bold;
+    padding-top: 0.2rem;
+    white-space: nowrap;
+    font-size: 1.3rem;
+    font-family: monospace;
+    flex: 1;
+}
+
+.content-wrapper .clg-name {
+    font-family: system-ui;
+    flex: 3;
+    font-size: 1.1rem;
+}
+.skill-bar{
+    font-family: system-ui;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+/*media query*/
+@media screen and (max-width: 480px){
+.container {
+    max-width: 100%;
+}
+.container .header {
+    flex-direction: column;
+}
+
+.main-bar {
+    flex-direction: column;
+}
+
+.container .header .img-bar img {
+    height: 18rem;
+}
+
+.img-bar .shape {
+    width: 13.99rem;
+}
+
+.main-bar .left-side-bar {
+    padding: 1rem 1rem 1rem 2.5rem;
+}
+}
+@media (min-width: 481px) and (max-width: 767px){
+    
+.container {
+    max-width: 80%;
+}
+}
