@@ -114,12 +114,14 @@ ul li::marker {
     white-space: nowrap;
     font-size: 1.3rem;
     font-family: monospace;
-    flex: 1;
+    flex-basis: 7rem;
+    flex-grow: 1;
 }
 
 .content-wrapper .clg-name {
     font-family: system-ui;
-    flex: 3;
+    flex-basis: 7rem;
+    flex-grow: 1;
     font-size: 1.1rem;
 }
 .skill-bar{
