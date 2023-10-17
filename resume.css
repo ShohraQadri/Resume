@@ -67,12 +67,12 @@
 
 .orange-pnl {
     background-color: orange;
-    padding: 0.2rem;
+    padding: 0.5rem 1rem;
     box-sizing: border-box;
     margin: 1.5rem 1rem 1rem 0;
     text-align: center;
     font-family: cursive;
-    width: 12rem;
+    width: fit-content;
     color: white;
 }
 
@@ -152,7 +152,7 @@ ul li::marker {
 }
 
 .main-bar .left-side-bar {
-    padding: 1rem 1rem 1rem 2.5rem;
+    padding: 1rem ;
 }
 }
 @media (min-width: 481px) and (max-width: 767px){
